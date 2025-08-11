@@ -1,9 +1,5 @@
 name: Deploy
 
-env:
-  VITE_PUBLIC_ID: ${{ secrets.VITE_PUBLIC_ID }}
-  VITE_SERVICE_ID: ${{ secrets.VITE_SERVICE_ID }}
-  VITE_TEMPLATE_ID: ${{ secrets.VITE_TEMPLATE_ID }}
 on:
   push:
     branches:
@@ -26,6 +22,10 @@ jobs:
 
       - name: Build project
         run: npm run build
+        env:
+          VITE_PUBLIC_ID: ${{ secrets.VITE_PUBLIC_ID }}
+          VITE_SERVICE_ID: ${{ secrets.VITE_SERVICE_ID }}
+          VITE_TEMPLATE_ID: ${{ secrets.VITE_TEMPLATE_ID }}
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v4
