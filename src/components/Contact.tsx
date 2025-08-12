@@ -135,7 +135,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-32 relative overflow-hidden">
+    <section id="contact" className="py-5 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900/30 to-black"></div>
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
@@ -283,6 +283,9 @@ const Contact = () => {
             </form>
           </div>
         </div>
+        <footer className="text-center mt-8 py-2 text-sm text-gray-500">
+          <p>&copy; Ajin Varughese {new Date().getFullYear()}. All rights reserved.</p>
+        </footer>
       </div>
     </section>
   );
