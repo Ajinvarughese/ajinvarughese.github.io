@@ -50,6 +50,7 @@ const Contact = () => {
     const serviceID = import.meta.env.VITE_SERVICE_ID;
     const templateID = import.meta.env.VITE_TEMPLATE_ID;
     const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+    console.log(serviceID, templateID, publicKey);
 
     try {
       await emailjs.send(serviceID, templateID, templateParams, publicKey);
