@@ -55,7 +55,6 @@ const Contact = () => {
       await emailjs.send(serviceID, templateID, templateParams, publicKey);
       setFormData({ name: '', email: '', subject: '', message: '' });
       setErrors({});
-      alert("Message sent successfully!");
     } catch (error) {
       console.error("Email sending error:", error);
     }
