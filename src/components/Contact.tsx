@@ -47,10 +47,9 @@ const Contact = () => {
       message: formData.message
     };
 
-    const serviceID = import.meta.env.VITE_SERVICE_ID;
-    const templateID = import.meta.env.VITE_TEMPLATE_ID;
-    const publicKey = import.meta.env.VITE_PUBLIC_KEY;
-    console.log(serviceID, templateID, publicKey);
+    const serviceID = "service_jtp7itv";
+    const templateID = "template_r4i7pna";
+    const publicKey = "pJpx4wnRMN3_9OpVU";
 
     try {
       await emailjs.send(serviceID, templateID, templateParams, publicKey);
