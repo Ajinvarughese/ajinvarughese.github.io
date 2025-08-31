@@ -46,7 +46,7 @@ const Projects = () => {
       image: wm,
       technologies: ['Springboot', 'React', 'MySQL', 'JavaScript', 'TypeScript', 'RestFul API', 'Git', 'Figma'],
       github: 'https://github.com/ajinvarughese/neural-chat',
-      live: 'https://neural-chat-demo.example.com',
+      live: '',
       featured: false,
       stats: { }
     },
@@ -56,7 +56,7 @@ const Projects = () => {
       image: el,
       technologies: ['Springboot', 'React', 'MySQL', 'JavaScript', 'RestFul API', 'Git'],
       github: 'https://github.com/ajinvarughese/holographic-portfolio',
-      live: 'https://holographic-demo.example.com',
+      live: '',
       featured: false,
       stats: {  }
     },
@@ -189,7 +189,8 @@ const Projects = () => {
           {otherProjects.map((project, index) => (
             <div
               key={index}
-              className="group relative bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-xl rounded-2xl overflow-hidden border border-gray-800 hover:border-cyan-500/50 transition-all duration-500 transform hover:scale-105 hover:-translate-y-1"
+              onClick={() => window.open(project.github, '_blank')}
+              className="group cursor-pointer relative bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-xl rounded-2xl overflow-hidden border border-gray-800 hover:border-cyan-500/50 transition-all duration-500 transform hover:scale-105 hover:-translate-y-1"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
