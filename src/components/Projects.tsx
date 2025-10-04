@@ -16,7 +16,7 @@ const Projects = () => {
       image: SF,
       technologies: ['Springboot', 'React', 'MySQL', 'JavaScript', 'TypeScript', 'RestFul API', 'Git', 'Figma'],
       github: 'https://github.com/ajinvarughese/detroit',
-      live: '',
+      live: 'https://detroit-sf.netlify.app',
       featured: true,
       stats: { }
     },
