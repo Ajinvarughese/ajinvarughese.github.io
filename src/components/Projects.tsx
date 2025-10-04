@@ -45,7 +45,7 @@ const Projects = () => {
       description: 'Waste Management System optimizes waste collection through smart scheduling and real-time tracking. Built with Java, React, and Google Cloud, it enables households and businesses to schedule pickups efficiently, minimizes operational costs, and promotes environmental sustainability by ensuring timely and responsible waste disposal.',
       image: wm,
       technologies: ['Springboot', 'React', 'MySQL', 'JavaScript', 'TypeScript', 'RestFul API', 'Git', 'Figma'],
-      github: 'https://github.com/ajinvarughese/neural-chat',
+      github: 'https://github.com/ajinvarughese/wastewise-backend',
       live: '',
       featured: false,
       stats: { }
@@ -55,7 +55,7 @@ const Projects = () => {
       description: 'E-Learning web app built with ReactJS and Java Spring Boot, offering interactive courses, personalized learning paths, real-time collaboration, and progress tracking. Designed for all devices, it provides a secure and scalable environment for students, professionals, and lifelong learners to achieve their educational goals.',
       image: el,
       technologies: ['Springboot', 'React', 'MySQL', 'JavaScript', 'RestFul API', 'Git'],
-      github: 'https://github.com/ajinvarughese/holographic-portfolio',
+      github: 'https://github.com/ajinvarughese/learnoz',
       live: '',
       featured: false,
       stats: {  }
